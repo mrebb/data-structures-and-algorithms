@@ -1,3 +1,4 @@
+<img src="https://travis-ci.com/mrebb/data-structures-and-algorithms.svg?branch=array_shift">
 # Reverse an Array
 Reverse an array of values without using built-in methods like reverse()
 
