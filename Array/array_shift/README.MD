@@ -1,3 +1,5 @@
+https://travis-ci.com/mrebb/data-structures-and-algorithms.svg?branch=array_shift
+
 # Insert and shift an array in middle at index
 Insert and shift an array in middle at index with the value passed-in without using array.shift or push methods
 
@@ -5,4 +7,4 @@ Insert and shift an array in middle at index with the value passed-in without us
 Write a function called insertShiftArray which takes an array and an additional value as arguments. Without utilizing any of the built-in methods available to your language, return the provided array argument with elements in reversed order.
 
 ## Solution
-<img src = "./assets/.JPG">
+<img src = "./assets/array_shift.JPG">
