@@ -1,0 +1,25 @@
+{
+  "name": "array_shift",
+  "version": "1.0.0",
+  "description": "insertArrayShift program",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrebb/data-structures-and-algorithms.git"
+  },
+  "author": "Madhu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrebb/data-structures-and-algorithms/issues"
+  },
+  "dependencies": {
+    "jest": "^22.4.4"
+  },
+  "homepage": "https://github.com/mrebb/data-structures-and-algorithms#readme"
+}
