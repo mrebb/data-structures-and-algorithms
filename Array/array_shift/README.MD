@@ -1,4 +1,4 @@
-https://travis-ci.com/mrebb/data-structures-and-algorithms.svg?branch=array_shift
+<img src="https://travis-ci.com/mrebb/data-structures-and-algorithms.svg?branch=array_shift">
 
 # Insert and shift an array in middle at index
 Insert and shift an array in middle at index with the value passed-in without using array.shift or push methods
