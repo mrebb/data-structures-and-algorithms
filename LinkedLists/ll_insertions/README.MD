@@ -1,13 +1,15 @@
 <img src="https://travis-ci.com/mrebb/data-structures-and-algorithms.svg?branch=ll_insertions">
 
-# array_adjacent_product
-Largest product of 2 adjacent values in a 2D array
+# Linked list insertions
+Implement singly linked list data structure
 
 ## Challenge
-Write a function called LargestProduct which takes in a 2D array, of arbitrary size.
-Without utilizing any of the built-in methods available to your language, return the largest product of 2 adjacent values within the 2D array.
-Adjacent values might be horizontally, vertically, or diagonally connected.
+Write the following methods for the Linked List class:
+* append(value) which adds a new node with the given value to the end of the list
+* insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
+* insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
+
 
 
 ## Solution
-<img src = "./assets/array_adjacent_product.JPG">
+<img src = "./assets/.JPG">

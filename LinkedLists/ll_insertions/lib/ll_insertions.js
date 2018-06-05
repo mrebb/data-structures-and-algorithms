@@ -41,7 +41,6 @@ SinglyLinkedList.insertBefore = (value,newValue)=>{
     
       if(currentNode.next === null){
         return 'invalid search key';
-        
       }
     }
   }
@@ -82,6 +81,6 @@ SinglyLinkedList.delete = (value)=>{
     }
     currentNode = currentNode.next;
   }
-  
 };
+
 module.exports = SinglyLinkedList;

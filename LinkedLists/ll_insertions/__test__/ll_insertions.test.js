@@ -41,5 +41,4 @@ describe('Singly linked list module', () => {
     let deletedValue = ll.delete(2);
     expect(deletedValue).toEqual(2);
   });
-  
 }); 
