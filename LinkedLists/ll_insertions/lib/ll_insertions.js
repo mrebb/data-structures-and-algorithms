@@ -82,5 +82,4 @@ SinglyLinkedList.delete = (value)=>{
     currentNode = currentNode.next;
   }
 };
-
 module.exports = SinglyLinkedList;
