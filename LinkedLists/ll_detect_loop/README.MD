@@ -1,6 +1,6 @@
 <img src="https://travis-ci.com/mrebb/data-structures-and-algorithms.svg?branch=ll_detect_loop">
 
-# Linked Lists merge
+# Circular Linked List detect loop
 Identify a circular reference in a linked list.
 
 ## Challenge
