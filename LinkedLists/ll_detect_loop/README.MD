@@ -1,10 +1,10 @@
-<img src="https://travis-ci.com/mrebb/data-structures-and-algorithms.svg?branch=ll_merge">
+<img src="https://travis-ci.com/mrebb/data-structures-and-algorithms.svg?branch=ll_detect_loop">
 
 # Linked Lists merge
-Merge two linked lists
+Identify a circular reference in a linked list.
 
 ## Challenge
-Write a function called mergeLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the single list. Try and keep additional space down to O(1). You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+Write a method for the Linked List class called hasLoop which takes no arguments. Return a boolean that indicates whether or not a circular reference or loop is present in the linked list. Your implementation must not use any additional memory or modify the nodes of the linked list. You have access to the Node class and all the standard properties on the Linked List class as well as the methods created in previous challenges.
 
 ## Solution
 <img src = "./assets/.JPG">

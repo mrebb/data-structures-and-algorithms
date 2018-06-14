@@ -28,7 +28,7 @@ SinglyLinkedList.append = (value)=>{
 SinglyLinkedList.hasLoop = (LL)=>{
   console.log(LL);
   if(LL===undefined){
-    return false;
+    return undefined;
   }
   let p1 = LL.head;
   let p2 = LL.head;
@@ -37,28 +37,11 @@ SinglyLinkedList.hasLoop = (LL)=>{
     p2 = p2.next;
 
     if(p1===p2){
-      var isCircular = true;
-      break;
+      return true;
     }
   }
+  return false;
+  
+};
 
-  if(isCircular){
-    return isCircular;
-  }
-  else {
-    return false;
-  }
-};
-SinglyLinkedList.test = ()=>{
-  SinglyLinkedList.append(1);
-  SinglyLinkedList.append(3);
-  SinglyLinkedList.append(2);
-  let LL = SinglyLinkedList.append(5);
-  LL.head.next.next.next = LL.head.next.next;
-  console.log(LL);
-  let result=SinglyLinkedList.hasLoop(LL);
-  console.log(result);
-  return result;
-};
-console.log(SinglyLinkedList.test());
 module.exports = SinglyLinkedList;
