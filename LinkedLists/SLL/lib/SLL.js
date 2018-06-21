@@ -4,8 +4,8 @@ class SinglyLinkedList {
     // this.length = 0;
   }
   //Big(O) = O(n)
-  append(value) {
-    let node = new Node(value);
+  append(val) {
+    let node = new Node(val);
     if (!this.head) {
       this.head = node;
       return node;
@@ -30,14 +30,14 @@ class SinglyLinkedList {
     return;
   }
   //Big(O) = O(1)
-  insertAfter(value,newValue){
+  insertAfter(val,newValue){
     let node = new Node(newValue);
     if(!this.head){
       return;
     }
     let currentNode = this.head;
     while(currentNode){
-      if(currentNode.value === value){
+      if(currentNode.val === val){
         node.next = currentNode.next;
         currentNode.next = node;
         break;
@@ -50,18 +50,18 @@ class SinglyLinkedList {
     return this.head;
   }
   //Big(O) = O(1)
-  remove(value){
+  remove(val){
     if(!this.head){
       return 'list is empty';
     }
     let currentNode = this.head;
     while(currentNode){
-      if(this.head.value === value){
+      if(this.head.val === val){
         this.head = null;
         return;
       }
-      if(currentNode.next.value === value){
-        let deletedValue = currentNode.next.value;
+      if(currentNode.next.val === val){
+        let deletedValue = currentNode.next.val;
         currentNode.next = currentNode.next.next;
         return deletedValue;
       }
@@ -139,8 +139,8 @@ class SinglyLinkedList {
 }
 
 class Node {
-  constructor(value) {
-    this.value = value;
+  constructor(val) {
+    this.val = val;
     this.next = null;
   }
 }
