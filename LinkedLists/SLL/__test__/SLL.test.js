@@ -10,12 +10,12 @@ describe('Singly linked list module', () => {
     ll.append(3);
     ll.append(2);
     ll.append(5);
-    expect(ll.head.next.next.next.value).toEqual(5);
+    expect(ll.head.next.next.next.val).toEqual(5);
   });
   it('append() method should add value to head node if list is empty', ()=>{
     let ll = new SinglyLinkedList();
     ll.append(1);
-    expect(ll.head.value).toEqual(1);
+    expect(ll.head.val).toEqual(1);
     expect(ll.head.next).toEqual(null);
   });
   it('prepend() method should add the new node before head', ()=>{
@@ -23,12 +23,12 @@ describe('Singly linked list module', () => {
     ll.append(1);
     ll.append(2);
     ll.prepend(5);
-    expect(ll.head.value).toEqual(5);
+    expect(ll.head.val).toEqual(5);
   });
   it('prepend() method should add node to head if list is empty', ()=>{
     let ll = new SinglyLinkedList();
     ll.prepend(5);
-    expect(ll.head.value).toEqual(5);
+    expect(ll.head.val).toEqual(5);
   });
   
   it('insertAfter() method should add the new value just after the value mentioned', ()=>{
@@ -38,7 +38,7 @@ describe('Singly linked list module', () => {
     ll.append(2);
     ll.append(5);
     ll.insertAfter(3,7);
-    expect(ll.head.next.next.value).toEqual(7);
+    expect(ll.head.next.next.val).toEqual(7);
   });
   it('insertAfter() method should throw exception when invalid value is searched', ()=>{
     let ll = new SinglyLinkedList();
@@ -59,7 +59,7 @@ describe('Singly linked list module', () => {
     ll.append(2);
     ll.append(3);
     ll.remove(2);
-    expect(ll.head.next.value).toEqual(3);
+    expect(ll.head.next.val).toEqual(3);
   });
   it('serialize() method converts object to string form when linked list object is passed', ()=>{
     let ll = new SinglyLinkedList();

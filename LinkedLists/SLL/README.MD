@@ -3,7 +3,7 @@
 # Singly linked list
 implement a Singly Linked List (SLL) data structure
 
-## Featured tasks
+## Linked list methods
 Write the following methods for the Linked List class:
 * append(value) which adds a new node with the given value to the end of the list
 * prepend(value) which add a new node before head
