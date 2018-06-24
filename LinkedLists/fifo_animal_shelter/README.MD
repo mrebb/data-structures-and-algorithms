@@ -1,7 +1,5 @@
 <img src="https://travis-ci.com/mrebb/data-structures-and-algorithms.svg?branch=stacks-and-queues">
 
-# Travis Build: https://travis-ci.com/mrebb/data-structures-and-algorithms 
-
 # Stacks and Queues
 
 * implemented a Stack constructor
