@@ -20,12 +20,11 @@ class SinglyLinkedList {
   //Big(O) = O(1)
   prepend(val){
     let node = new Node(val);
-    let currentNode = this.head;
     if(!this.head){
       this.head = node;
       return;
     }
-    this.head.next = currentNode;
+    node.next = this.head;
     this.head = node;
     return;
   }
