@@ -80,6 +80,7 @@ class SinglyLinkedList {
     if(this.head.next === null){
       let deletedHead = this.head;
       this.head = null;
+      this.tail = null;
       this.length--;
       return deletedHead;
     }
