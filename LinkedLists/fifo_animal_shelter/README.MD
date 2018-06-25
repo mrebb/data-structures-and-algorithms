@@ -3,7 +3,6 @@
 https://travis-ci.com/mrebb/data-structures-and-algorithms
 
 ## First-in, First out Animal Shelter.
-Identify a circular reference in a linked list.
 
 ## Challenge
 * Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
