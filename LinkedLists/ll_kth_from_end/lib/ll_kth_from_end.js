@@ -34,18 +34,12 @@ SinglyLinkedList.kthElement = (kTh)=>{
   }
   currentNode = this.head;
   kTh = counter-kTh;
-  console.log(kTh);
   counter = 0;
   if(kTh>=0){
-
-  
     while(counter<kTh){
       currentNode = currentNode.next;
-      console.log(currentNode.value, counter);
       counter ++;
-    
     }
-    console.log(currentNode.value, counter);
     return currentNode.value;
   }
   else{
