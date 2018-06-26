@@ -1,6 +1,8 @@
 <img src="https://travis-ci.com/mrebb/data-structures-and-algorithms.svg?branch=queue_with_stacks">
 
-# Towers of Hanoi.
+## Travis: https://travis-ci.com/mrebb/data-structures-and-algorithms/jobs/131465599 
+
+## Towers of Hanoi.
 
 ## Challenge
 <img src="https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-14/hanoi.png">
