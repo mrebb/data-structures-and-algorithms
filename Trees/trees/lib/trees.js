@@ -6,7 +6,7 @@ class Tree{
     this.root = null;
   }
   /**
-   * method to push new values on tree
+   * method to push new values on tree recursively
    * @param {Node} node 
    */
   insertNew(data)
@@ -26,7 +26,15 @@ class Tree{
       this.insertNode(this.root, newNode);
   }
  
-  
+  insertNode(root,node){
+    if(node.val<root.val){
+      root.left = this.insertNode(root.left,node.val);
+    }
+    else if(node.val>root.val){
+      root.right = this.insertNode(root.right,node.val);
+    }
+    return root;
+  }
   insert(val){
     let node = new Node(val);
     if(this.root === null){
@@ -185,7 +193,6 @@ class Node{
     this.right = null;
   }
 }
-
 module.exports = {
   Node,Tree,
 };

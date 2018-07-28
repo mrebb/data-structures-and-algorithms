@@ -8,4 +8,4 @@ https://travis-ci.com/mrebb/data-structures-and-algorithms
 * Write a function called breadthFirstTraversal which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach; print every visited node’s value.
 
 ## Solution
-<img src = "./assets/.JPG">
+<img src = "./assets/breadth-first-traversal.jpeg">

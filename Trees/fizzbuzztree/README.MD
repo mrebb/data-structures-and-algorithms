@@ -10,4 +10,4 @@ https://travis-ci.com/mrebb/data-structures-and-algorithms
 * Without utilizing any of the built-in methods available to your language, determine weather or not the value of each node is divisible by 3, 5 or both, and change the value of each of the nodes respectively. Return the tree with it’s news values.
 
 ## Solution
-<img src = "./assets/.JPG">
+<img src = "./assets/fizzBuzzTree.jpeg">
