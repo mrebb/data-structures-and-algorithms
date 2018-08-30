@@ -1,4 +1,4 @@
-<img src="https://travis-ci.com/mrebb/data-structures-and-algorithms.svg?branch=fifo_animal_shelter">
+<img src="https://travis-ci.com/mrebb/data-structures-and-algorithms.svg?branch=repeated_word">
 ## Travis Link:
 https://travis-ci.com/mrebb/data-structures-and-algorithms
 
