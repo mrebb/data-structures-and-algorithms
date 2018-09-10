@@ -35,6 +35,8 @@ class Tree{
     }
     return root;
   }
+
+  //non-recursive
   insert(val){
     let node = new Node(val);
     if(this.root === null){
@@ -68,8 +70,7 @@ class Tree{
   // it recurrs over the tree to find the
   // data and removes it
   removeNode(node, key)
-  {
-         
+  {   
     // if the root is null then tree is 
     // empty
     if(node === null)
@@ -159,6 +160,100 @@ class Tree{
     return currentNode.val === node.val;
 
   }
+  /**
+   * Recursive in-order traversal gives a default sorted list
+   * @param {Tree.root} root 
+   */
+  inOrderTraverse(root)
+  {
+    if(root===null){
+      return;
+    }
+    if(root.left){
+      this.inOrderTraverse(root.left);
+    }
+    console.log(root.val);
+    if(root.right){
+      this.inOrderTraverse(root.right);
+    }
+  }
+  /**
+   * non-recursive depth first search in-order
+   */
+  dfs(root){
+    if(root===null){
+      return;
+    }
+    let stack = [];
+    let node = root;
+    while(node!==null){
+      stack.push(node);
+      node=node.left;
+    }
+    while(stack.length>0){
+      node = stack.pop();
+      console.log(node.val);
+      if(node.right){
+        node = node.right;
+        while(node!==null){
+          stack.push(node);
+          node = node.left;
+        }
+      }
+    }
+    
+  }
+  /**
+ * Complex Util method
+ * @param {recursive tree current node} node 
+ * @param {left node} l 
+ * @param {right node} r 
+ */
+  isTreeBSTUtil(node,l=null,r=null){
+    if(node===null){
+      return true;
+    }
+    if(l!==null && node.val<l.val){
+      return false;
+    }
+    if(r!==null && node.val>r.val){
+      return false;
+    }
+    if(!this.isTreeBSTUtil(node.left,l,node) || !this.isTreeBSTUtil(node.right,node,r)){
+      return false;
+    }
+    return true;
+  }
+  /**
+   * Simple util method
+   * @param {current tree node passing recursively} node 
+   */
+  isBSTUtil(node){
+    if(node===null){
+      return true;
+    }
+    if(node.left!==null && node.val<node.left.val){
+      return false;
+    }
+    if(node.right!==null && node.val>node.right.val){
+      return false;
+    }
+    if(!this.isBSTUtil(node.left) || !this.isBSTUtil(node.right)){
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * actual method that talks to Util method
+   */
+  isTreeBST(){
+    return this.isBSTUtil(this.root);
+  }
+  /**
+   * Serialize function
+   * @param {tree root node} root 
+   */
   serialize(root){
     if(!root){
       return null;
@@ -167,6 +262,11 @@ class Tree{
     this.seriazerHelper(root,result);
     return result.join('->');
   }
+  /**
+   * serializer helper
+   * @param {current node} node 
+   * @param {result} output 
+   */
   seriazerHelper(node,output){
     if(!node){
       output.push('#');
@@ -176,6 +276,10 @@ class Tree{
     output.push(node.val);
     if(node.right){this.seriazerHelper(node.right,output);}
   }
+  /**
+   * deserialize to construct the tree back to form
+   * @param {serialized data} data 
+   */
   deserialize(data){
     data = data.split('->');
     console.log(data);
