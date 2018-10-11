@@ -224,7 +224,7 @@ class Tree{
     }
     return true;
   }
-  /**
+  /** 
    * Simple util method
    * @param {current tree node passing recursively} node 
    */
